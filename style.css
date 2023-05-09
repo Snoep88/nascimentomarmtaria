@@ -1,0 +1,256 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffbf65;
+    color: #67430a;
+    font-family: "Open Sans", Arial, Helvetica, sans-serif ;
+    margin: 0;
+    padding: 10px 50px 50px 50px;
+  }
+  
+  h1, h2 {
+    margin: 0;
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    user-select: text;
+  }
+  
+  #logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+  }
+  
+  #logoImg {
+    margin-right: 10px;
+  }
+  .menu {
+    background-color: #ff7300;
+    display: flex;
+    justify-content: center;
+    /* descolamento-x | deslocamento-y | desfoque | espalhamento | cor */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+  
+  .menu a {
+    padding: 14px;
+    text-decoration: none;
+    color: white;  
+    transition: background-color .5s;
+  }
+  
+  .menu a:hover {
+    background-color: white;
+    color: #ff7300;
+  }
+  .salada{
+    font-size: 25px;
+    position: relative;
+    margin-bottom: 30px;
+    font-style:italic;
+    font-weight: bold;
+  }
+  
+  .card {
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0 20px 0;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .tipoProduto{
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    font-style: italic;
+  }
+  
+  .produto {
+    padding: 10px;
+    border-radius: 10px;
+    transition: box-shadow .5s;
+  }
+  
+  .produto:hover {
+    box-shadow: 5px 10px 15px #888888;
+  }
+  
+  .produto img {
+    border-radius: 50%;
+    height: 200px;
+    border: 2px solid #eb4b5e;
+  }
+
+  .tituloProduto {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: -3px;
+    margin-top: 0px;
+  }
+  .descricaoProduto{
+    overflow-wrap: normal;
+  }
+  
+  .precoProduto {
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    margin-top: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 16px;
+  }
+  
+  .miniGrid {
+    height: 325px;
+    overflow: hidden;
+    padding: 15px;
+  }
+  
+  .coluna-esquerda {
+    width: 75%;
+    float: left;
+  }
+  
+  .coluna-direita {
+    width: 25%;
+    float: right;
+    padding-left: 20px;
+  }
+  
+  #feijoadaBanner {
+    height: 280px;
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/feijoada.jpg);
+    background-size: 210%;
+    filter: brightness(95%);
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 2px #67430a;
+    position:relative;
+    cursor: auto;
+    transition: box-shadow .5s;
+  }
+    #feijoadaBanner:hover{
+      box-shadow: 10px 10px 16px #888888;
+    }
+  #feijoadaH1{
+    position: absolute;
+    top:15px;
+    left: 15px;
+  }
+  #findividual{
+    position: absolute;
+    top:70px;
+    left: 15px;
+  }
+  #fmédia{
+    position: absolute;
+    top:130px;
+    left: 15px;
+  }#fgrande{
+    position: absolute;
+    top:190px;
+    left: 15px;
+  }
+  #feijoadaValor{
+    position: absolute;
+    top:240px;
+    left: 15px;
+ }
+  .sobreTexto {
+    font-size: 17px;
+  }
+  .agradecimento{
+    font-size: 21px;
+    font-weight: bold;
+  }
+  #entrega{
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    width: 300px;
+    height: 100px
+  }
+  #entrega img{
+    position: absolute;
+    right: 10px;
+    width: 75px ;  
+    border-radius: 50%;
+  }
+  #tel{
+    position: absolute;
+    height: 60px;
+    background-color: #ff950b;
+    color:white;
+    padding: 10px;
+    margin-top: 10px;
+    left:-10px;
+    border-radius: 10px;
+    opacity: 0;
+    
+  }
+  #tel p{
+    margin: 0;
+  }
+  
+    /* OPERADOR RARO*/
+  #entrega img:hover + #tel{
+    transition: opacity .5s;
+    opacity: 1;
+  }
+  
+  
+  @media screen and (max-width: 820px) {
+    header h1 {
+      font-size: 2.9rem;
+    }
+    header img{
+      width: 5rem;
+    }
+    .grid{
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .coluna-esquerda {
+      width: 100%;
+    }
+
+    .coluna-direita {
+      width: 100%;
+      padding: 0;
+    }
+  }
+  
+  @media screen and (max-width: 420px) {
+    header h1 {
+      font-size: 2rem;
+    }
+    header img{
+      width: 4rem;
+    }
+    .grid{
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    
+    body {
+      padding: 5px 25px 25px 25px;
+    }
+  
+    .menu, .menu a {
+      display: block;
+      width: 100%;
+    }
+  }

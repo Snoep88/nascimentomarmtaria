@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <!-- Permite controlar a viewport (tela) -->
+  <!-- Fornece ao navegador instruções de como controlar as dimensões e a escala da página -->
+  <!-- width=device-width define a largura da página para seguir a largura da tela do dispositivo (que varia dependendo do dispositivo) -->
+  <!-- A parte initial-scale=1.0 define o nível de zoom inicial quando a página é carregada pela primeira vez pelo navegador -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NASCIMENTOS MARMITARIA</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="style.css">
+  <link rel="icon" type="image/x-icon" href="images/logomarmita1.png">
+</head>
+
+<body>
+  <!--Cabeçalho da página -->
+  <header>
+    <div id="logo">
+      <a href="index.html"><img alt="logo" src="images/logomarmita1.png" width="100"></a>
+      <h1>NASCIMENTOS MARMITARIA</h1>
+    </div>
+    <div class="menu">
+      <a href="index.html">Início</a>
+      <a href="https://wa.me/5511980248063?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!" target="_blank" rel="noopener noreferrer">Contato via Whatsapp!</a>
+    </div>
+  </header>
+
+  <!-- Área principal -->
+  <main>
+
+    <!-- Coluna esquerda, produtos -->
+    <div class="coluna-esquerda">
+      <div class="card">
+        <h1 class="salada">TODAS AS OPÇÕES ACOMPANHAM ARROZ, FEIJÃO E SALADA. EXCETO FEIJOADA QUE NÃO ACOMPANHA SALADA.</h1>
+        <h1 class="tipoProduto">Carnes</h1>
+        <div class="grid">
+          <div class="produto">
+            <p class="tituloProduto">Alcatra</p>
+            <p class="precoProduto">R$: 22,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Bife a cavalo</p>
+            <p class="precoProduto">R$: 24,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Bife a parmegiana </p>
+            <p class="precoProduto">R$: 24,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Bisteca</p>
+            <p class="precoProduto">R$: 17,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Calabresa</p>
+            <p class="precoProduto">R$: 17,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Contra filé a portuguesa</p>
+            <p class="precoProduto">R$: 25,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Fricassê de contra filé empanado com creme de milho</p>
+            <p class="precoProduto">R$: 25,00</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h1 class="tipoProduto">Frangos</h1>
+        <div class="grid">
+          <div class="produto">
+            <p class="tituloProduto">Cordon Bleu a moda da casa</p>
+            <p class="precoProduto">R$: 24,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Filé de frango</p>
+            <p class="precoProduto">R$: 17,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Filé de frango a parmegiana</p>
+            <p class="precoProduto">R$: 22,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Filé de frango a portuguesa</p>            
+            <p class="precoProduto">R$: 25,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Filé de frango empanado com catupiry </p>
+            <p class="precoProduto">R$: 22,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Fricassê de frango empanado com creme de milho </p>
+            <p class="precoProduto">R$: 24,00</p>
+          </div>
+        </div>
+      </div><div class="card">
+        <h1 class="tipoProduto">Peixes</h1>
+        <div class="grid">
+          <div class="produto">
+            <p class="tituloProduto">Fricassê de merluza empanada com creme de milho</p>
+            <p class="precoProduto">R$: 25,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Merluza a portuguesa</p>
+            <p class="precoProduto">R$: 25,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Filé de merluza a parmegiana</p>
+            <p class="precoProduto">R$: 24,00</p>
+          </div>
+        </div>
+      </div><div class="card">
+        <h1 class="tipoProduto">Bebidas</h1>
+        <div class="grid">
+          <div class="produto">
+            <p class="tituloProduto">Refrigerante lata 350ml</p>
+            <p class="precoProduto">R$: 5,00</p>
+          </div>
+          <div class="produto">
+            <p class="tituloProduto">Água com gás 500ml</p>
+            <p class="precoProduto">R$: 4,00</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Coluna direita, extras-->
+    <div class="coluna-direita">
+      <div class="card" id="feijoadaBanner">
+        <h1 id="feijoadaH1">Feijoada</h1>
+        <h2 id="findividual">Individual: R$28</h2>
+        <h2 id="fmédia">Média: R$60</h2>
+        <h2 id="fgrande">Grande: R$70</h2>
+        <h2 id="feijoadaValor">QUARTAS E SÁBADOS</h2>
+      </div>
+      <div class="card">
+        <h2>Sobre Nós</h2>
+        <p class="sobreTexto">Bem-vindo à nossa marmitaria! Inauguramos em um momento muito desafiador, logo no início da pandemia, mas com o apoio e incentivo da minha esposa, decidimos seguir em frente e levar nossas deliciosas comidas para a casa das pessoas. Desde então, estamos trabalhando incansavelmente para oferecer refeições caseiras, saudáveis e saborosas para nossos clientes.</p>
+        <p class="sobreTexto">Nossa marmitaria tem um grande diferencial, que é o atendimento personalizado e próximo aos nossos clientes. Valorizamos muito a opinião de cada um e sempre buscamos melhorias para atendê-los da melhor maneira possível. Queremos que todos se sintam em casa e comam como se estivessem sendo preparados pela sua própria família.</p>
+        <p class="sobreTexto">Desde a nossa inauguração, temos recebido feedbacks positivos e muitos clientes satisfeitos, o que nos enche de orgulho e motivação para seguir em frente. Nossa marmitaria está crescendo cada vez mais e não podemos deixar de agradecer a todos que confiam no nosso trabalho e nos escolhem como sua opção de alimentação saudável e saborosa.</p>
+        <p class="sobreTexto">Em resumo, somos uma marmitaria que trabalha com amor e dedicação para levar refeições caseiras e saudáveis para a sua mesa. Estamos sempre em busca de novidades e melhorias para oferecer um serviço de qualidade, com atendimento próximo e personalizado. </p>
+        <p class="agradecimento">Agradecemos a todos que nos escolhem e confiam em nosso trabalho!</p>
+      </div>
+    </div>
+
+      <div class="coluna-esquerda">
+    </div>
+  </main>
+
+  <!-- Ícone de telefone, para entrega -->
+  <div id="entrega">
+    <a href="https://wa.me/5511980248063?text=Olá,%20gostaria%20de%20fazer%20um%20pedido!" target="_blank">
+      <img alt="telefone" src="images/telefone.png">
+      <div id="tel">
+        <p>(11) 98024-8063</p>
+        <p>Entregamos na sua casa!</p>
+      </div>
+    </a>
+  </div>
+
+</body>
+
+</html>
