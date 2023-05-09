@@ -38,7 +38,6 @@ html {
     background-color: #ff7300;
     display: flex;
     justify-content: center;
-    /* descolamento-x | deslocamento-y | desfoque | espalhamento | cor */
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
   }
   
@@ -207,7 +206,6 @@ html {
     margin: 0;
   }
   
-    /* OPERADOR RARO*/
   #entrega img:hover + #tel{
     transition: opacity .5s;
     opacity: 1;
